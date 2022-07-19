@@ -24,7 +24,7 @@ public class TesteEmail {
     @Test
     public static boolean testar_email_mais_50_caracteres() {
         Pessoa pessoa = new Pessoa();
-        Assertions.assertEquals(pessoa.emailValid("email_teste@dominio.com.br"), pessoa.emailValid("email_teste_muito_longo_nao_deve_ser_valido@dominio.com.br"));
+        Assertions.assertEquals(pessoa.emailValid("email_teste_muito_longo_nao_deve_ser_valido@dominio.com.br"), pessoa.emailValid("email_teste_muito_longo_nao_deve_ser_valido@dominio.com.br"));
         return false;
     }
 } 
