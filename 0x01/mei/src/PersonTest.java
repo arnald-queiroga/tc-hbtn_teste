@@ -21,12 +21,14 @@ public class PersonTest {
         person.setSalary(1200);
         Assertions.assertEquals(14400, person.calculateYearlySalary());
     }
-
+    
+    @Test
     public void person_is_MEI(){
         person = new Person("Arnald", "Queiroga", 1989, false, false, false);
         Assertions.assertTrue(person.isMEI());
     }
-
+    
+    @Test
     public void person_is_not_MEI(){
         person = new Person("Arnald", "Queiroga", 1989, false, true, false);
         Assertions.assertFalse(person.isMEI());
